@@ -1,0 +1,31 @@
+<!-- Assending Order List -->
+<script>
+    document.write("<h3>Random numbers list in Ascending order</h3><hr>");
+    // Declaration of an array
+    const array = [];
+    // Picking up 10 random numbers
+    for(i = 0; i < 10; i++){
+        let val = Math.floor(Math.random() * 100);
+        // Pushing all the random numbers to arary
+        array.push(val);
+    }
+    // Sorting in ascending order
+    array.sort(function(a, b){return a-b});
+    document.write("<ul>");
+    array.forEach((item)=>{
+        document.write("<li>"+item+"</li>");
+    })
+    document.write("</ul>")
+</script>
+
+<!-- Decending Order list -->
+<script>
+    document.write("<br><h3>Random numbers list in Descending order</h3><hr>");
+    // Sorting in desceding order
+    array.sort(function(a, b){return b-a});
+    document.write("<ul>");
+    array.forEach((item)=>{
+        document.write("<li>"+item+"</li>");
+    })
+    document.write("</ul>")
+</script>
