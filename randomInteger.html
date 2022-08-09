@@ -1,0 +1,16 @@
+<script>
+    document.write("<h3>Random numbers list</h3><hr>");
+    // Defining an array
+    const array = [];
+    // Picking up 10 random numbers
+    for(i = 0; i < 10; i++){
+        let val = Math.floor(Math.random() * 100);
+        // Pushing all the random numbers to arary
+        array.push(val);
+    }
+    document.write("<ul>");
+    array.forEach((item)=>{
+        document.write("<li>"+item+"</li>");
+    })
+    document.write("</ul>")
+</script>
