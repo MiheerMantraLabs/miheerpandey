@@ -1,0 +1,444 @@
+
+<!-- Readme -->
+<!-- Made By Miheer Pandey -->
+<!-- Readme -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Miheer pandey</title>
+    <style>
+    body{
+    background-color: bisque;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.btn-div{
+    width: 100vw;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.print-btn{
+    background-color: rgb(246, 231, 13);
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px black solid;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.print-btn:hover{
+    background-color: rgb(217, 203, 8);
+
+}
+.paper-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paper-container{
+    width: 750px;
+    height: auto;
+    background-color: white;
+    padding: 30px;
+}
+.header{
+    height: 140px;
+    border-bottom: 2px gray solid;
+}
+.sm{
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+.vm{
+    font-size: 45px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.col-1{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.col-2{
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+.thin-line{
+    max-width: 50px;
+    height: 1px;
+    background-color: gray;
+}
+.row0{
+    width: 5%;
+    float: left;
+    height: 80px;
+    max-height: 80px;
+}
+.row1{
+    width: 30%;
+    float: left;
+}
+.row2{
+    width: 65%;
+    float: left;
+    max-height: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.pp1{
+    height: 10px;
+    width: 2px;
+    background-color: gray;
+    align-self: center;
+    margin: auto;
+}
+.pp2{
+    height: 10px;
+    width: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: auto;
+}
+.pp3{
+    height: 100%;
+    width: 2px;
+    background-color: gray;
+    margin: auto;
+}
+.pr1{
+    width: 20%;
+    float: left;
+    margin: auto;
+}
+.rrp1{
+    width: 15%;
+    float: left;
+    margin: auto;
+}
+.rrp2{
+    width: 85%;
+    float: left;
+    margin: auto;
+}
+@media only screen and (max-width: 480px) {
+
+    .pr1{
+        width: 100%;
+        padding: 0;
+    }
+    .vm{
+        font-size: 25px;
+    }
+    .sm{
+        font-size: 9px;
+    }
+    
+
+  
+}
+    </style>
+    <script>
+        function printDiv(divName) {
+            
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+    </script>
+</head>
+
+<body>
+    <!-- Top Print Buttom Div -->
+    <div class="btn-div">
+        <!-- top Print Btn -->
+        <button class="print-btn" onclick="printDiv('paper-div')">
+            Print Resume
+        </button>
+    </div>
+    <!-- Paper Backgroud div -->
+    <div class="paper-div" id="paper-div">
+        <!-- Paper Container div -->
+        <div class="paper-container" id="paper-container">
+            <!-- Paper div -->
+            <div class="papar" id="paper" style="background-color: whites;">
+
+                <!-- Header -->
+                <div class="header">
+                    <!-- first colomn -->
+                    <div class="col-1">
+                        <h1 class="vm">Martine <br> Williems</h1>
+                        <p class="sm" style="margin-top: 5px; color: brown;">Web designer</p>
+                    </div>
+                    <!-- Second colomn -->
+                    <div class="col-2">
+                        <p class="sm">
+                            <b>
+                                Lorem ipsum dolor sit amet.
+                            </b>
+                        <p class="sm">
+                            Lorem, ipsum dolor. <br> +91 0000000000 <br> yourmail@company.com <br> www.yoursite.com
+                        </p>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Body Data -->
+                <br>
+                <h3 style="margin-bottom: 10px;">WORK EXPERIENCE</h3>
+                <div class="thin-line">
+
+                </div>
+
+                <br>
+
+                <!-- Row1 -->
+                <div class="row0">
+                    <div class="pp1">
+
+                    </div>
+                    <div class="pp2">
+
+                    </div>
+                    <div class="pp3">
+
+                    </div>
+                </div>
+                <div class="row1">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; ">Company Name, Place</h5>
+                    <h6 style="margin-top: 0;">2005 - 2007</h6>
+                </div>
+                <div class="row2">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; "><b>Working Hierarchy</b></h5>
+                    <h6 style="margin-top: 0;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+                        autem nam, dolorum, ullam eligendi asperiores rerum consequuntur ipsam eius excepturi animi.
+                        Enim asperiores similique iusto, quam reiciendis quibusdam? Quam, corporis? </h6>
+                </div>
+                <!-- Row 2 -->
+                <!-- Row1 -->
+                <div class="row0">
+                    <div class="pp1">
+
+                    </div>
+                    <div class="pp2">
+
+                    </div>
+                    <div class="pp3">
+
+                    </div>
+                </div>
+                <div class="row1">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; ">Company Name, Place</h5>
+                    <h6 style="margin-top: 0;">2005 - 2007</h6>
+                </div>
+                <div class="row2">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; "><b>Working Hierarchy</b></h5>
+                    <h6 style="margin-top: 0;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+                        autem nam, dolorum, ullam eligendi asperiores rerum consequuntur ipsam eius excepturi animi.
+                        Enim asperiores similique iusto, quam reiciendis quibusdam? Quam, corporis? </h6>
+                </div>
+                <!-- Row 3 -->
+
+                <!-- Row1 -->
+                <div class="row0">
+                    <div class="pp1">
+
+                    </div>
+                    <div class="pp2">
+
+                    </div>
+                    <div class="pp1">
+
+                    </div>
+                </div>
+                <div class="row1">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; ">Company Name, Place</h5>
+                    <h6 style="margin-top: 0;">2005 - 2007</h6>
+                </div>
+                <div class="row2">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; "><b>Working Hierarchy</b></h5>
+                    <h6 style="margin-top: 0;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+                        autem nam, dolorum, ullam eligendi asperiores rerum consequuntur ipsam eius excepturi animi.
+                        Enim asperiores similique iusto, quam reiciendis quibusdam? Quam, corporis? </h6>
+                </div>
+
+                <hr>
+
+                <!-- Next Body Data -->
+
+                <br>
+                <h3 style="margin-bottom: 10px;">EDUCATION</h3>
+                <div class="thin-line">
+
+                </div>
+
+                <br>
+
+                <!-- Row1 -->
+                <div class="row0">
+                    <div class="pp1">
+
+                    </div>
+                    <div class="pp2">
+
+                    </div>
+                    <div class="pp3">
+
+                    </div>
+                </div>
+                <div class="row1">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; ">University Name, Place</h5>
+                    <h6 style="margin-top: 0;">2005 - 2007</h6>
+                </div>
+                <div class="row2">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; "><b>Degree Name</b></h5>
+                    <h6 style="margin-top: 0;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+                        autem nam, dolorum, ullam eligendi asperiores rerum consequuntur ipsam eius excepturi animi.
+                        Enim asperiores similique iusto, quam reiciendis quibusdam? Quam, corporis? </h6>
+                </div>
+                <!-- Row 2 -->
+                <!-- Row1 -->
+                <div class="row0">
+                    <div class="pp1">
+
+                    </div>
+                    <div class="pp2">
+
+                    </div>
+                    <div class="pp3">
+
+                    </div>
+                </div>
+                <div class="row1">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; ">University Name, Place</h5>
+                    <h6 style="margin-top: 0;">2005 - 2007</h6>
+                </div>
+                <div class="row2">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; "><b>Degree Name</b></h5>
+                    <h6 style="margin-top: 0;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+                        autem nam, dolorum, ullam eligendi asperiores rerum consequuntur ipsam eius excepturi animi.
+                        Enim asperiores similique iusto, quam reiciendis quibusdam? Quam, corporis? </h6>
+                </div>
+                <!-- Row 3 -->
+
+                <!-- Row1 -->
+                <div class="row0">
+                    <div class="pp1">
+
+                    </div>
+                    <div class="pp2">
+
+                    </div>
+                    <div class="pp1">
+
+                    </div>
+                </div>
+                <div class="row1">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; ">University Name, Place</h5>
+                    <h6 style="margin-top: 0;">2005 - 2007</h6>
+                </div>
+                <div class="row2">
+                    <h5 style="margin-bottom: 3px; margin-top: 0; "><b>Degree Name</b></h5>
+                    <h6 style="margin-top: 0;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+                        autem nam, dolorum, ullam eligendi asperiores rerum consequuntur ipsam eius excepturi animi.
+                        Enim asperiores similique iusto, quam reiciendis quibusdam? Quam, corporis? </h6>
+                </div>
+
+                <hr>
+
+                <!-- Next Body Data -->
+
+                <br>
+                <h3 style="margin-bottom: 10px;">EXPERTISE</h3>
+                <div class="thin-line">
+
+                </div>
+
+                <br>
+
+                <!-- show1 -->
+                <div class="pr1">
+                    <div class="rrp1">
+                        <div class="pp2"></div>
+                    </div>
+                    <div class="rrp2">
+                       <h5 style="margin: 0;"><b>Fieldset Name</b></h5>
+                    <p class="sm" style="font-size: 12px; margin: 0;">Experties Name</p>
+                    </div>
+                </div>
+
+                <!-- Show2 -->
+                <div class="pr1">
+                    <div class="rrp1">
+                        <div class="pp2"></div>
+                    </div>
+                    <div class="rrp2">
+                       <h5 style="margin: 0;"><b>Fieldset Name</b></h5>
+                    <p class="sm" style="font-size: 12px; margin: 0;">Experties Name</p>
+                    </div>
+                </div>
+                <!-- Show3 -->
+                <div class="pr1">
+                    <div class="rrp1">
+                        <div class="pp2"></div>
+                    </div>
+                    <div class="rrp2">
+                       <h5 style="margin: 0;"><b>Fieldset Name</b></h5>
+                    <p class="sm" style="font-size: 12px; margin: 0;">Experties Name</p>
+                    </div>
+                </div>
+                <!-- Show4 -->
+                <div class="pr1">
+                    <div class="rrp1">
+                        <div class="pp2"></div>
+                    </div>
+                    <div class="rrp2">
+                       <h5 style="margin: 0;"><b>Fieldset Name</b></h5>
+                    <p class="sm" style="font-size: 12px; margin: 0;">Experties Name</p>
+                    </div>
+                </div>
+                <!-- Show5 -->
+                <div class="pr1">
+                    <div class="rrp1">
+                        <div class="pp2"></div>
+                    </div>
+                    <div class="rrp2">
+                       <h5 style="margin: 0;"><b>Fieldset Name</b></h5>
+                    <p class="sm" style="font-size: 12px; margin: 0;">Experties Name</p>
+                    </div>
+                </div>
+
+
+
+
+
+<br><br>
+
+
+
+                <!-- Last -->
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
